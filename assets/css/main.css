@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #505562;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-container {
+  width: 500px;
+  margin: 20px auto;
+}
+
+.header {
+  background-color: #2d2d37;
+  text-align: center;
+  padding: 1.75rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.date {
+  background-color: #222222;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.75rem 2rem 0.75rem 0;
+}
+
+ul.currencies {
+  height: 500px;
+  background-color: #222222;
+}
+
+.add-currency-btn {
+  background-color: gray;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-top: 3px solid #222;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 0.75rem;
+  transition: background-color 0.25s;
+}

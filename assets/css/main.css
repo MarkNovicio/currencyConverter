@@ -35,8 +35,73 @@ body {
 }
 
 ul.currencies {
-  height: 500px;
+  height: calc(100vh- 40px - 100px - 40px -58px);
   background-color: #222222;
+  padding: 0 1.5rem 1rem 1.5rem;
+  list-style: none;
+  overflow-y: auto;
+}
+
+ul.currencies li {
+  background-color: #2d2d37;
+  border-radius: 5px;
+  padding: 1rem 1rem 0.75rem 1rem;
+  position: relative;
+}
+
+ul.currencies li:last-child {
+  margin-bottom: 0;
+}
+
+ul.currencies li.base-currency {
+  background-color: #264d73;
+}
+
+.flag {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+}
+
+.currency-symbol {
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 4rem;
+  text-align: center;
+}
+
+.info .input input {
+  font-size: 1.5rem;
+  width: 78%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.currency-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-left: 4rem;
+}
+
+.base-currency-rate {
+  font-size: 0.8rem;
+  margin-left: 4rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+  padding: 0;
+  cursor: pointer;
 }
 
 .add-currency-btn {
@@ -51,4 +116,24 @@ ul.currencies {
   color: #fff;
   padding: 0.75rem;
   transition: background-color 0.25s;
+}
+
+.currency {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.info {
+  display: inline-block;
+  width: 78%;
+}
+
+/*scroll bar*/
+ul.currencies::-webkit-scrollbar {
+  width: 5px;
+}
+
+ul.currencies::-webkit-scrollbar-thumb {
+  background-color: #2d2d37;
+  border-bottom: 1rem solid #222;
 }
